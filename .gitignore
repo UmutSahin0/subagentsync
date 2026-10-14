@@ -1,0 +1,14 @@
+node_modules/
+
+# Generated agent files (.claude/agents, .cursor/agents, .codex/agents) are committed on purpose.
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# CI cache
+.npm/
+dist/

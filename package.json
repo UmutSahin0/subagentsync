@@ -1,0 +1,51 @@
+{
+  "name": "subagentsync",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Write AI subagents once, generate native configs for Claude Code, Cursor and OpenAI Codex with a different model per platform.",
+  "keywords": [
+    "claude-code",
+    "claude-code-subagents",
+    "cursor",
+    "cursor-subagents",
+    "openai-codex",
+    "codex-agents",
+    "subagents",
+    "ai-agents",
+    "agent-config",
+    "llm",
+    "developer-tools"
+  ],
+  "author": "Umut Şahin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UmutSahin0/subagentsync.git"
+  },
+  "homepage": "https://github.com/UmutSahin0/subagentsync#readme",
+  "bugs": "https://github.com/UmutSahin0/subagentsync/issues",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "subagentsync": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node src/cli.ts",
+    "test": "node --test src/sync.test.ts"
+  },
+  "dependencies": {
+    "yaml": "^2.8.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0"
+  }
+}

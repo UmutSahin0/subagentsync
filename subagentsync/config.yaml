@@ -1,0 +1,16 @@
+# Per-platform settings for each agent in agents/<name>.md.
+# Only listed fields are emitted; omitted fields fall back to the platform default.
+#
+# Supported settings (anything else fails `npx subagentsync check`):
+#   claude: model, tools, disallowedTools, permissionMode, effort, color, maxTurns
+#   cursor: model, readonly, is_background
+#   codex:  model, model_reasoning_effort, sandbox_mode
+#   any:    enabled: false  -> do not generate this agent for that platform
+#
+# Models: claude = sonnet | opus | haiku | inherit | full id, cursor = inherit | model id,
+# codex = an OpenAI model id (omit to inherit the session model).
+agents:
+  api-doc-writer:
+    claude: { model: inherit }
+    cursor: { model: inherit }
+    codex: {}
